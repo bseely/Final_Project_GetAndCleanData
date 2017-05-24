@@ -1,0 +1,56 @@
+Code Book
+
+File Name: AllAverages.txt  	. contains the averages for each subject-activity-measure combination
+
+subject
+		1 . . 30  .integer identifying the person for whom data was collected
+
+activity
+	factor with six levels - activity label for each observation
+		1  .LAYING
+		2  .SITTING
+		3  .STANDING
+		4  .WALKING
+		5  .WALKING DOWNSTAIRS
+		6  .WALKING UPSTAIRS
+
+measure
+	.character string,  name of the quantity measured 
+		fBodyAcc-X    .frequency domain accelerometer reading on the x-axis
+		fBodyAcc-Y    . frequency domain accelerometer reading on the y-axis
+                fBodyAcc-Z    . frequency domain accelerometer reading on the z-axis
+                fBodyAccJerk-X        . frequency domain jerk of the accelerometer on the x-axis
+                fBodyAccJerk-Y        . frequency domain jerk of the accelerometer on the y-axis
+                fBodyAccJerk-Z        . frequency domain jerk of the accelerometer on the z-axis
+                fBodyAccMag    .frequency domain accelerometer reading magnitude
+                fBodyBodyAccJerkMag    .frequency domain accelerometer jerk magnitude
+                fBodyBodyGyroJerkMag    .frequency domain gyroscope jerk magnitude
+                fBodyBodyGyroMag    .frequency domain gyroscope reading magnitude
+                fBodyGyro-X    .frequency domain gyroscope reading on the x-axis
+                fBodyGyro-Y    .frequency domain gyroscope reading on the y-axis
+                fBodyGyro-Z    .frequency domain gyroscope reading on the z-axis
+                tBodyAcc-X     .time domain accelerometer reading on the x-axis
+                tBodyAcc-Y     .time domain accelerometer reading on the y-axis
+                tBodyAcc-Z     .time domain accelerometer reading on the z-axis
+                tBodyAccJerk-X     .time domain accelerometer jerk on the x-axis
+                tBodyAccJerk-Y     .time domain accelerometer jerk on the y-axis
+                tBodyAccJerk-Z     .time domain accelerometer jerk on the z-axis
+                tBodyAccJerkMag    . time domain accelerometer jerk magnitude
+                tBodyAccMag     .time domain accelerometer magnitude
+                tBodyGyro-X    .time domain gyroscope reading on the x-axis
+                tBodyGyro-Y    .time domain gyroscope reading on the x-axis
+                tBodyGyro-Z    .time domain gyroscope reading on the x-axis
+                tBodyGyroJerk-X    .time domain gyroscope jerk on the x-axis
+                tBodyGyroJerk-Y    .time domain gyroscope jerk on the x-axis
+                tBodyGyroJerk-Z    .time domain gyroscope jerk on the x-axis
+                tBodyGyroJerkMag    .time domain gyroscope jerk magnitude
+                tBodyGyroMag    .time domain gyroscope magnitude
+                tGravityAcc-X    .time domain gravity acceleration on the x-axis
+                tGravityAcc-Y    .time domain gravity acceleration on the x-axis
+                tGravityAcc-Z    .time domain gravity acceleration on the x-axis
+
+mean    	.range= -1.0000000000000 to 1.0000000000000
+	        .average of means over observations for subject-activity-measure combination
+
+standard deviation  	.range= -1.0000000000000 to 1.0000000000000
+                .average of standard deviations over observations for a subject-activity-measure combination
