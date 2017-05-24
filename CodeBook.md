@@ -7,23 +7,25 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## OVERVIEW
-```
-## This analysis takes data from the Human Activity Recognition database built from
-## the recorded activities of 30 subjects performing activities of daily living (ADL)
-## while carrying a waist-mounted smartphone with embedded inertial sensors.
-```
+## Overview
 
-## libraries
-This analysis uses functions from the following libraries: tidyr, dplyr, and data.table
-```
+### This analysis takes data from the Human Activity Recognition database built from
+### the recorded activities of 30 subjects performing activities of daily living (ADL)
+### while carrying a waist-mounted smartphone with embedded inertial sensors.
+
+
+## Libraries
+
+### This analysis uses functions from the following libraries: tidyr, dplyr, and data.table
+
+```{r}
 ## load tidyr, dplyr, and data.table
 library(tidyr)
 library(dplyr)
 library(data.table)
 ```
 
-## input files (located in the ./data/ directory)
+## Input Files (located in the ./data/ directory)
 ```
 ##    Table                           Description of table contents
 ## activity_labels.txt     lookup table containing an integer code (from 1 to 6) and an activity_label
@@ -124,7 +126,7 @@ allData<-separate(allData, key, c("base", "statistic", "measurement_axis"), "-",
 allData<-allData[ , !(names(allData) %in% c("activity_idx","base","measurement_axis"))]
 ```
 
-## The big finish: preparing the data for making the output table
+## Preparing allData_thin interim table for export
 ```
 ## Eliminate "mean()"" and "std()"" from the measure names
 allData$measure<-sub("-mean\\(\\)","", allData$measure)
